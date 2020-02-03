@@ -7,6 +7,7 @@ public class BathroomRunner {
             bathroom.addStall(new StallNumber(i));
         }
 
+        //noinspection InfiniteLoopStatement
         while (true) {
             // fill  1/2
             for (int i = 0; i < numStalls / 2; i++) {
