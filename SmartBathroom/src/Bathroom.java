@@ -4,7 +4,6 @@ import java.util.Map;
 // TODO: should use exceptions here, not a boolean return
 public class Bathroom {
     private HashMap<StallNumber, Status> stalls;
-    private int levelSize;
 
     public Bathroom() {
         this.stalls = new HashMap<>();
