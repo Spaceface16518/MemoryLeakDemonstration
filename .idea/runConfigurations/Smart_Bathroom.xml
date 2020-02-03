@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Smart Bathroom" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="BathroomRunner" />
+    <module name="SmartBathroom" />
+    <option name="VM_PARAMETERS" value="-Xmx500m" />
+    <RunnerSettings RunnerId="Debug with VisualVM">
+      <option name="visualVMId" value="767118612302705" />
+    </RunnerSettings>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
