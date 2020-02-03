@@ -1,5 +1,3 @@
-import leaky.StallNumber;
-
 import java.util.HashMap;
 import java.util.Map;
 

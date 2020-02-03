@@ -1,5 +1,3 @@
-package leaky;
-
 public class StallNumber {
     public int number;
 

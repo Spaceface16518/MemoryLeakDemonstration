@@ -1,5 +1,3 @@
-import leaky.StallNumber;
-
 public class BathroomRunner {
     public static void main(String[] args) {
         final int numStalls = 10000;
