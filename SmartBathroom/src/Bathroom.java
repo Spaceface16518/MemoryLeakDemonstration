@@ -22,32 +22,24 @@ public class Bathroom {
         return stalls.get(stallNumber);
     }
 
-    public boolean addStall(StallNumber stallNumber) {
+    public void addStall(StallNumber stallNumber) {
         if (!stalls.containsKey(stallNumber)) {
             stalls.put(stallNumber, Status.Empty);
-            return true;
-        } else {
-            return false;
         }
     }
 
-    public boolean enterStall(StallNumber stallNumber) {
+    public void enterStall(StallNumber stallNumber) {
         Status stallStatus = stalls.get(stallNumber);
-        if (stallStatus != null && stallStatus.equals(Status.InUse)) {
-            return false;
-        } else {
+        // guess it's a magic bathroom too
+        if (stallStatus == null || stallStatus.equals(Status.Empty)) {
             stalls.put(stallNumber, Status.InUse);
-            return true;
         }
     }
 
-    public boolean exitStall(StallNumber stallNumber) {
+    public void exitStall(StallNumber stallNumber) {
         Status prevStatus = stalls.get(stallNumber);
         if (prevStatus != null && prevStatus.equals(Status.InUse)) {
             stalls.put(stallNumber, Status.Empty);
-            return true;
-        } else {
-            return false;
         }
     }
 }
