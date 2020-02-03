@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.Map;
 
 // TODO: should use exceptions here, not a boolean return
 public class Bathroom {
@@ -7,19 +6,6 @@ public class Bathroom {
 
     public Bathroom() {
         this.stalls = new HashMap<>();
-    }
-
-    public StallNumber findStall() {
-        for (Map.Entry<StallNumber, Status> stall : stalls.entrySet()) {
-            if (!stall.getValue().equals(Status.InUse)) {
-                return stall.getKey();
-            }
-        }
-        return null;
-    }
-
-    public Status checkStall(StallNumber stallNumber) {
-        return stalls.get(stallNumber);
     }
 
     public void addStall(StallNumber stallNumber) {
